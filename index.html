@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RICH TV</title>
+  <link rel="icon" href="images/logo-icon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="container-fluid sticky-top" id="navbar">
+    <nav class="container navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" /></a>
+      <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toogle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse highlight" id="tags">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Rich Picks</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Watchlist</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">CEO Interviews</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true">More</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Trading School</a>
+              <a class="dropdown-item" href="#">CEO Interviews</a>
+            </div>
+          </li>
+        </ul>
+        <a class="nav-link" id="start_btn" href="#">Start Free</a>
+      </div>
+    </nav>
+  </header>
+  <section class="container d-flex gap-5 p-0">
+    <div class="col-lg-8 me-3" id="chart">
+      <div class="row">
+        <div class="col column-gap-2 d-flex align-items-center">
+          <img src="images/apple-icon.png" />
+          <h5 class="my-0 fw-bold">Apple Inc</h5>
+        </div>
+        <div class="col Gbtn d-flex justify-content-end">
+          <a href="#" class="nav-link"><i class="ri-add-line"></i>Watchlist</a>
+        </div>
+      </div>
+      <hr class="chart_hr" />
+      <div class="row">
+        <div class="col text pe-0">
+          <h1 id="stock-price"></h1>
+          <p><span class="red">-0.39-0.28%</span></p>
+          <p><span>Last Updated:</span>2021-10-08</p>
+          <p id="stock-volume"><span>Volume: </span></p>
+          <p><span>Day's Range: </span>142.56-144.17</p>
+        </div>
+        <div class="col ps-0">
+          <img src="images/Chart.png" />
+        </div>
+      </div>
+      <div>
+        <div class=" mt-5 change">
+
+          <nav>
+            <div class="nav nav-tab" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-overview-tab" data-bs-toggle="tab" data-bs-target="#Overview"
+                type="button" role="tab" aria-controls="Overview" aria-selected="true">
+                Overview
+              </button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#Profile" type="button"
+                role="tab" aria-controls="Profile" aria-selected="false">
+                Profile
+              </button>
+              <button class="nav-link" id="nav-news-tab" data-bs-toggle="tab" data-bs-target="#News" type="button"
+                role="tab" aria-controls="News" aria-selected="false">
+                News
+              </button>
+              <button class="nav-link" id="nav-financials-tab" data-bs-toggle="tab" data-bs-target="#Financials"
+                type="button" role="tab" aria-controls="Financials" aria-selected="false">
+                Financials
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="Overview" role="tabpanel" aria-labelledby="nav-overview-tab"
+              tabindex="0">
+              <div class="mt-4">
+                <h5 class="pb-3" style="border-bottom: 2px solid #ffa200">
+                  KEY DATA
+                </h5>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="col-md-6">
+                  <table class="table" id="Table">
+                    <tbody class="row-gap-3">
+                      <tr>
+                        <td scope="row">CLOSE</td>
+                        <th class="data">144.84000</th>
+                      </tr>
+                      <tr class="">
+                        <td scope="row">$CHG</td>
+                        <th class="data">1.08000</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">OPEN</td>
+                        <th class="data">143.77000</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">HIGH</td>
+                        <th class="data">144.89999</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">52 WEEKS HIGH</td>
+                        <th class="data">157.25999</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">52 WEEKS HIGH CHANGE</td>
+                        <th class="data">-12.42000</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">52 WEEKS CHANGE %</td>
+                        <th class="data">~7.89775</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">AVERAGE VOLUME</td>
+                        <th class="data">73470335</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">CURRENCY</td>
+                        <th class="data">USD</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-md-6 pe-3">
+                  <table class="table" id="Table">
+                    <tbody>
+                      <tr class="tr">
+                        <td scope="row">DATE TIME</td>
+                        <th class="data">2021-10-15</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">VOLUME</td>
+                        <th class="data">67885200</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">%CHG</td>
+                        <th class="data">0.75125</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">PREV.CLOSE</td>
+                        <th class="data">143.75999</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">LOW</td>
+                        <th class="data">143.50999</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">52 WEEKS LOW</td>
+                        <th class="data">107.32000</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">52 WEEKS LOW CHANGE</td>
+                        <th class="data">37.52000</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">52 WEEKS LOW CHANGE %</td>
+                        <th class="data">34.96086</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">EXCHANGE</td>
+                        <th class="data">NASDAQ</th>
+                      </tr>
+                      <tr>
+                        <td scope="row">52 WEEKS RANGE</td>
+                        <th class="data">107.320000-157.259995</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="mt-5 mb-4">
+                <h5 class="pb-3" style="border-bottom: 2px solid #ffa200">
+                  PERFORMANCE
+                </h5>
+              </div>
+              <table class="table text-center mb-5" id="table">
+                <thead>
+                  <hr class="m-0" />
+                  <tr>
+                    <th id="thead" class="symbol">5 Day</th>
+                    <th id="thead2" class="symbol">1 Month</th>
+                    <th id="thead" class="symbol">3 Month</th>
+                    <th id="thead2" class="symbol">YTD</th>
+                    <th id="thead" class="symbol">1 Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="thead3" class="table-data">
+                      -19.50%<img src="images/red_rectangles/red 1.png" class="ps-2" />
+                    </td>
+                    <td class="table-data">
+                      -40.50%<img src="images/red_rectangles/red 2.png" class="ps-2" />
+                    </td>
+                    <td id="thead3" class="table-data">
+                      -30.50%<img src="images/red_rectangles/red 3.png" class="ps-2" />
+                    </td>
+                    <td class="table-data">
+                      -40.50%<img src="images/red_rectangles/red 2.png" class="ps-2" />
+                    </td>
+                    <td id="thead3" class="table-data">
+                      -0.78%<img src="images/red_rectangles/red 4.png" class="ps-2" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="Profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+              <div class="mt-4">
+                <h5 class="pb-3" style="border-bottom: 1px solid #edb043">
+                  ABOUT APPLE INC.
+                </h5>
+                <p class="text-s mt-3">
+                  Apple, Inc. engages in the design, manufacture, and sale of
+                  smartphones, personal computers, tablets, wearables and
+                  accessories, and other varieties of related services. It
+                  operates through the following geographical segments:
+                  Americas, Europe, Greater China, Japan, and Rest of Asia
+                  Pacific. The Americas segment includes North and South
+                  America. The Europe segment consists of European countries,
+                  as well as India, the Middle East, and Africa. The Greater
+                  China segment comprises China, Hong Kong, and Taiwan. The
+                  Rest of Asia Pacific segment includes Australia and Asian
+                  countries. Its products and services include iPhone, Mac,
+                  iPad, AirPods, Apple TV, Apple Watch, Beats products,
+                  AppleCare, iCloud, digital content stores, streaming, and
+                  licensing services. The company was founded by Steven Paul
+                  Jobs, Ronald Gerald Wayne, and Stephen G. Wozniak in April
+                  1976 and is headquartered in Cupertino, CA.
+                </p>
+                <div class="profile_data my-5">
+                  <h5 class="pb-3" style="border-bottom: 1px solid #edb043">
+                    PROFILE
+                  </h5>
+                  <div class="d-flex gap-3">
+                    <div class="col-md-6">
+                      <table class="table" id="Table">
+                        <tbody class="row-gap-3">
+                          <tr>
+                            <td scope="row">Symbol</td>
+                            <th class="data">AAPL</th>
+                          </tr>
+                          <tr class="">
+                            <td scope="row">Name</td>
+                            <th class="data">Apple Inc</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">Exchange</td>
+                            <th class="data">NASDAQ</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">Sector</td>
+                            <th class="data">Technology</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">Industry</td>
+                            <th class="data">Consumer Electronics</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">Employees</td>
+                            <th class="data">147000</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">Website</td>
+                            <th class="data">http:www.apple.com</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">Type</td>
+                            <th class="data">Common Stock</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-md-6 pe-3">
+                      <table class="table" id="Table">
+                        <tbody>
+                          <tr class="tr">
+                            <td scope="row">CEO</td>
+                            <th class="data">Mr. Timothy D.Cook</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">Address</td>
+                            <th class="data">One Apple Park Way</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">City</td>
+                            <th class="data">Cupertino</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">ZIP</td>
+                            <th class="data">95014</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">State</td>
+                            <th class="data">CA</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">Country</td>
+                            <th class="data">US</th>
+                          </tr>
+                          <tr>
+                            <td scope="row">Phone</td>
+                            <th class="data">408-966-1010</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane my-5" id="News" role="tabpanel" aria-labelledby="nav-news-tab" tabindex="0">
+              <h5 class="mb-3">APPL NEWS</h5>
+              <div class="row m-0">
+                <div class="col-2 p-0">
+                  <img src="images/Rectangle 1.png" alt="" />
+                </div>
+                <div class="col p-0">
+                  <p class="mb-0 para3">
+                    Sollicitudin eu sit ac mi orci, fermentum sagittis,
+                    facilisis dictum fermentum enim, sapien sit dolor ornare
+                    ac nisi
+                  </p>
+                  <p class="company m-0">By Rich Tv | June 30, 2022</p>
+                </div>
+                <hr class="my-2" />
+              </div>
+              <div class="row m-0">
+                <div class="col-2 p-0">
+                  <img src="images/Rectangle 2.png" alt="" />
+                </div>
+                <div class="col p-0">
+                  <p class="mb-0 para3">
+                    Id tristique sit amet, praesent nisl sed aenean sit ipsum
+                    morbi congue et fusce elementum viverra mauris, eu
+                  </p>
+                  <p class="company m-0">By Rich Tv | June 30, 2022</p>
+                </div>
+                <hr class="my-2" />
+              </div>
+              <div class="row m-0">
+                <div class="col-2 p-0">
+                  <img src="images/Rectangle 3.png" alt="" />
+                </div>
+                <div class="col p-0">
+                  <p class="mb-0 para3">
+                    Ullamcorper sit quisque amet id eros ipsum sit egestas
+                    adipiscing diam amet odio tincidunt faucibus cum pulvinar
+                    nec
+                  </p>
+                  <p class="company m-0">By Rich Tv | June 30, 2022</p>
+                </div>
+                <hr class="my-2" />
+              </div>
+              <div class="row m-0">
+                <div class="col-2 p-0">
+                  <img src="images/Rectangle 4.png" alt="" />
+                </div>
+                <div class="col p-0">
+                  <p class="mb-0 para3">
+                    Ullamcorper venenatis rhoncus diam vivamus magna vel
+                    commodo, dolor dui, lorem urna gravida pretium, lacus
+                    gravida non pharetra
+                  </p>
+                  <p class="company m-0">By Rich Tv | June 30, 2022</p>
+                </div>
+                <hr class="my-2" />
+              </div>
+              <div class="row m-0">
+                <div class="col-2 p-0">
+                  <img src="images/More_Rectangles/Rectangle 1.png" alt="" />
+                </div>
+                <div class="col p-0">
+                  <p class="mb-0 para3">
+                    Consectetur senectus aliquam rhoncus purus quam venenatis,
+                    risus posuere odio adipiscing elit vitae ac est, ante
+                    tellus, proin
+                  </p>
+                  <p class="company m-0">By Rich Tv | June 30, 2022</p>
+                </div>
+                <hr class="my-2" />
+              </div>
+              <div class="row m-0">
+                <div class="col-2 p-0">
+                  <img src="images/More_Rectangles/Rectangle 2.png" alt="" />
+                </div>
+                <div class="col p-0">
+                  <p class="mb-0 para3">
+                    Consectetur senectus aliquam rhoncus purus quam venenatis,
+                    risus posuere odio adipiscing elit vitae ac est, ante
+                    tellus, proin
+                  </p>
+                  <p class="company m-0">By Rich Tv | June 30, 2022</p>
+                </div>
+                <hr class="my-2" />
+              </div>
+              <div class="row m-0">
+                <div class="col-2 p-0">
+                  <img src="images/More_Rectangles/Rectangle 3.png" alt="" />
+                </div>
+                <div class="col p-0">
+                  <p class="mb-0 para3">
+                    Consectetur senectus aliquam rhoncus purus quam venenatis,
+                    risus posuere odio adipiscing elit vitae ac est, ante
+                    tellus, proin
+                  </p>
+                  <p class="company m-0">By Rich Tv | June 30, 2022</p>
+                </div>
+                <hr class="my-2" />
+              </div>
+              <div class="row m-0">
+                <div class="col-2 p-0">
+                  <img src="images/More_Rectangles/Rectangle 4.png" alt="" />
+                </div>
+                <div class="col p-0">
+                  <p class="mb-0 para3">
+                    Consectetur senectus aliquam rhoncus purus quam venenatis,
+                    risus posuere odio adipiscing elit vitae ac est, ante
+                    tellus, proin
+                  </p>
+                  <p class="company m-0">By Rich Tv | June 30, 2022</p>
+                </div>
+                <hr class="my-2" />
+              </div>
+              <div class="row m-0">
+                <div class="col-2 p-0">
+                  <img src="images/More_Rectangles/Rectangle 5.png" alt="" />
+                </div>
+                <div class="col p-0">
+                  <p class="mb-0 para3">
+                    Consectetur senectus aliquam rhoncus purus quam venenatis,
+                    risus posuere odio adipiscing elit vitae ac est, ante
+                    tellus, proin
+                  </p>
+                  <p class="company m-0">By Rich Tv | June 30, 2022</p>
+                </div>
+                <hr class="my-2" />
+              </div>
+              <div class="row m-0">
+                <div class="col-2 p-0">
+                  <img src="images/More_Rectangles/Rectangle 6.png" alt="" />
+                </div>
+                <div class="col p-0">
+                  <p class="mb-0 para3">
+                    Consectetur senectus aliquam rhoncus purus quam venenatis,
+                    risus posuere odio adipiscing elit vitae ac est, ante
+                    tellus, proin
+                  </p>
+                  <p class="company m-0">By Rich Tv | June 30, 2022</p>
+                </div>
+                <hr class="my-2" />
+              </div>
+              <div class="col p-0 pagination">
+                <a href="#" class="prev disabled"><i class="ri-arrow-left-s-line"></i></a>
+                <a href="#" class="page active">1</a>
+                <a href="#" class="page">2</a>
+                <span class="dots">...</span>
+                <a href="#" class="page">9</a>
+                <a href="#" class="page">17</a>
+                <a href="#" class="next"><i class="ri-arrow-right-s-line"></i></a>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="Financials" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+              <nav>
+                <div class="nav" id="financials-tab" role="tablist">
+                  <button class="nav-link active" id="nav-income-statement-tab" data-bs-toggle="tab"
+                    data-bs-target="#Income_statement" type="button" role="tab" aria-controls="Income_statement"
+                    aria-selected="true">Income Statement</button>
+                  <button class="nav-link" id="nav-balance-sheet-tab" data-bs-toggle="tab"
+                    data-bs-target="#Balance_sheet" type="button" role="tab" aria-controls="Balance_sheet"
+                    aria-selected="false">Balance Sheet</button>
+                  <button class="nav-link" id="nav-cash-flow-tab" data-bs-toggle="tab" data-bs-target="#Cash_flow"
+                    type="button" role="tab" aria-controls="Cash_flow" aria-selected="false">Cash Flow</button>
+                  <button class="nav-link" id="nav-dividends-tab" data-bs-toggle="tab" data-bs-target="#Dividends"
+                    type="button" role="tab" aria-controls="Dividends" aria-selected="false">Dividends</button>
+                  <button class="nav-link" id="nav-earnings-tab" data-bs-toggle="tab" data-bs-target="#Earnings"
+                    type="button" role="tab" aria-controls="Earnings" aria-selected="false">Earnings</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="financials-tabContent">
+                <div class="tab-pane fade show active" id="Income_statement" role="tabpanel"
+                  aria-labelledby="nav-income-statement-tab" tabindex="0">
+                  <div class="d-flex justify-content-between align-items-center mt-4"
+                    style="border-bottom: 1px solid #edb043">
+                    <h5>APPL INCOME STATEMENT</h5>
+                    <div>
+                      <label>
+                        <input type="radio" name="frequency" checked />
+                        <span></span> Annual
+                      </label>
+                      <label>
+                        <input type="radio" name="frequency" />
+                        <span></span> Quarterly
+                      </label>
+                    </div>
+                  </div>
+                  <table class="w-100 my-4 large_table">
+                    <thead>
+                      <tr>
+                        <th class="float-start">Year</th>
+                        <th>2022</th>
+                        <th>2021</th>
+                        <th>2021</th>
+                        <th>2021</th>
+                      </tr>
+                      <tr class="company">
+                        <td class="float-start">Periods Ending:</td>
+                        <td>26/03</td>
+                        <td>25/12</td>
+                        <td>26/09</td>
+                        <td>25/06</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-s">
+                        <td class="float-start">Sales</td>
+                        <td>123945000000</td>
+                        <td>123945000000</td>
+                        <td>123945000000</td>
+                        <td>123945000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Cost of Goods</td>
+                        <td>69702000000</td>
+                        <td>69702000000</td>
+                        <td>69702000000</td>
+                        <td>69702000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Gross Profit</td>
+                        <td>54243000000</td>
+                        <td>54243000000</td>
+                        <td>54243000000</td>
+                        <td>54243000000</td>
+                      </tr>
+                      <tr class="text-s bg-light">
+                        <td class="float-start">Operating Expense</td>
+                        <td>66306000000</td>
+                        <td>66306000000</td>
+                        <td>66306000000</td>
+                        <td>66306000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Research & Development</td>
+                        <td>6306000000</td>
+                        <td>6306000000</td>
+                        <td>6306000000</td>
+                        <td>6306000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">
+                          Selling General & Administrative
+                        </td>
+                        <td>6449000000</td>
+                        <td>6449000000</td>
+                        <td>6449000000</td>
+                        <td>6449000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Other Operating Expenses</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Operating Income</td>
+                        <td>41488000000</td>
+                        <td>41488000000</td>
+                        <td>41488000000</td>
+                        <td>41488000000</td>
+                      </tr>
+                      <tr class="text-s bg-light">
+                        <td class="float-start">Non Operating Interest</td>
+                        <td>6306000000</td>
+                        <td>6306000000</td>
+                        <td>6306000000</td>
+                        <td>6306000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Income</td>
+                        <td>650000000</td>
+                        <td>650000000</td>
+                        <td>650000000</td>
+                        <td>650000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Expense</td>
+                        <td>694000000</td>
+                        <td>694000000</td>
+                        <td>694000000</td>
+                        <td>694000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Other Income Expense</td>
+                        <td>-203000000</td>
+                        <td>-203000000</td>
+                        <td>-203000000</td>
+                        <td>-203000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Pretax Income</td>
+                        <td>41241000000</td>
+                        <td>41241000000</td>
+                        <td>41241000000</td>
+                        <td>41241000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Income Tax</td>
+                        <td>6611000000</td>
+                        <td>6611000000</td>
+                        <td>6611000000</td>
+                        <td>6611000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Net Income</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Eps Basic</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Eps Diluted</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Basic Shares Outstanding</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Diluated Shares Outstanding</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Ebitda</td>
+                        <td>44632000000</td>
+                        <td>44632000000</td>
+                        <td>44632000000</td>
+                        <td>44632000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">
+                          Net Income Continuous Operations
+                        </td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Minority Interests</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Preferred Stock Dividends</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane fade" id="Balance_sheet" role="tabpanel" aria-labelledby="nav-balance-sheet-tab"
+                  tabindex="0">
+                  <div class="d-flex justify-content-between align-items-center mt-4"
+                    style="border-bottom: 1px solid #edb043">
+                    <h5>APPL BALANCE STATEMENT</h5>
+                    <div>
+                      <label>
+                        <input type="radio" name="frequency" checked />
+                        Annual
+                      </label>
+                      <label>
+                        <input type="radio" name="toggle" />
+                        Quarterly
+                      </label>
+                    </div>
+                  </div>
+                  <table class="w-100 my-4 large_table">
+                    <thead>
+                      <tr>
+                        <th class="float-start">Year</th>
+                        <th>2022</th>
+                        <th>2021</th>
+                        <th>2021</th>
+                        <th>2021</th>
+                      </tr>
+                      <tr class="company">
+                        <td class="float-start">Periods Ending:</td>
+                        <td>26/03</td>
+                        <td>25/12</td>
+                        <td>26/09</td>
+                        <td>25/06</td>
+                      </tr>
+                    </thead>
+                    <tbody class="table-body">
+                      <tr class="sub-header">
+                        <th class="p-2" colspan="5">Assets</th>
+                      </tr>
+                      <tr class="text-s sub-heading">
+                        <td class="float-start">Total Current Assets</td>
+                        <td>69702000000</td>
+                        <td>69702000000</td>
+                        <td>69702000000</td>
+                        <td>69702000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Cash</td>
+                        <td>5420300000</td>
+                        <td>5420300000</td>
+                        <td>5420300000</td>
+                        <td>5420300000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Cash Equivalents</td>
+                        <td>8505000000</td>
+                        <td>8505000000</td>
+                        <td>8505000000</td>
+                        <td>8505000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Cash And Cash Equivalents</td>
+                        <td>13925300000</td>
+                        <td>13925300000</td>
+                        <td>13925300000</td>
+                        <td>13925300000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">
+                          Other Short Term Investments
+                        </td>
+                        <td>4145000000</td>
+                        <td>4145000000</td>
+                        <td>4145000000</td>
+                        <td>4145000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Accounts Receivable</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Other Receivables</td>
+                        <td>4148000000</td>
+                        <td>4148000000</td>
+                        <td>4148000000</td>
+                        <td>4148000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Inventory</td>
+                        <td>8500000000</td>
+                        <td>8500000000</td>
+                        <td>8500000000</td>
+                        <td>8500000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Prepaid Assets</td>
+                        <td>6500000000</td>
+                        <td>6500000000</td>
+                        <td>6500000000</td>
+                        <td>6500000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Restricted Cash</td>
+                        <td>6140000000</td>
+                        <td>6140000000</td>
+                        <td>6140000000</td>
+                        <td>6140000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Assets Held for Sale</td>
+                        <td>-203000000</td>
+                        <td>-203000000</td>
+                        <td>-203000000</td>
+                        <td>-203000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Hedging Assets</td>
+                        <td>421000000</td>
+                        <td>421000000</td>
+                        <td>421000000</td>
+                        <td>421000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Other Current Assets</td>
+                        <td>8610000000</td>
+                        <td>8610000000</td>
+                        <td>8610000000</td>
+                        <td>8610000000</td>
+                      </tr>
+                      <tr class="text-s sub-heading">
+                        <td class="float-start">Total Non Current Assets</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Properties</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Land And Improvements</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">
+                          Machinery Furniture Equipment
+                        </td>
+                        <td>1638724000</td>
+                        <td>1638724000</td>
+                        <td>1638724000</td>
+                        <td>1638724000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Construction in Progress</td>
+                        <td>1638724000</td>
+                        <td>1638724000</td>
+                        <td>1638724000</td>
+                        <td>1638724000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Leases</td>
+                        <td>448200000</td>
+                        <td>448200000</td>
+                        <td>448200000</td>
+                        <td>448200000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Accumulated Depreciation</td>
+                        <td>-3917510234</td>
+                        <td>-3775232224</td>
+                        <td>-3479572844</td>
+                        <td>-4468738360</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Goodwill</td>
+                        <td>3905304057</td>
+                        <td>4112374057</td>
+                        <td>3806474057</td>
+                        <td>4067304940</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Investment Properties</td>
+                        <td>887429434</td>
+                        <td>426747678</td>
+                        <td>497803045</td>
+                        <td>876970509</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Financial Assets</td>
+                        <td>3786777033</td>
+                        <td>3696767046</td>
+                        <td>3657467036</td>
+                        <td>3837404877</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Investments and Advances</td>
+                        <td>4287574842</td>
+                        <td>4106493223</td>
+                        <td>3970767146</td>
+                        <td>3560873782</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Other Non Current Assets</td>
+                        <td>3647522545</td>
+                        <td>3764063116</td>
+                        <td>4081038444</td>
+                        <td>4033876111</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="w-100 my-4 large_table">
+                    <tbody class="table-body">
+                      <tr class="text-s sub-header">
+                        <th class="p-2" colspan="5">Liabilities</th>
+                      </tr>
+                      <tr class="text-s sub-heading">
+                        <td class="float-start">Total Current Liabilities</td>
+                        <td>43620878079</td>
+                        <td>4348510737</td>
+                        <td>3982530168</td>
+                        <td>4080783072</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Accounts Payable</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Accrued Expenses</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Short Term Debt</td>
+                        <td>3897556720</td>
+                        <td>3508434785</td>
+                        <td>3156756316</td>
+                        <td>4080657644</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Deferred Revenue</td>
+                        <td>4187317918</td>
+                        <td>4404881833</td>
+                        <td>4120447933</td>
+                        <td>3731571414</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Tax Payable</td>
+                        <td>376591174</td>
+                        <td>4083448334</td>
+                        <td>3781256225</td>
+                        <td>4038197281</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Pensions</td>
+                        <td>4348744035</td>
+                        <td>4785845344</td>
+                        <td>4263208344</td>
+                        <td>4363784732</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Other Current Liabilities</td>
+                        <td>5564377578</td>
+                        <td>3918345431</td>
+                        <td>4078967804</td>
+                        <td>4533414492</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Total Current Liabilities</td>
+                        <td>3408398320</td>
+                        <td>4728895312</td>
+                        <td>4172797083</td>
+                        <td>3272412124</td>
+                      </tr>
+                      <tr class="text-s sub-heading">
+                        <td class="float-start">
+                          Total Non Current Liabilities
+                        </td>
+                        <td>3657899159</td>
+                        <td>3616245718</td>
+                        <td>3657199528</td>
+                        <td>4436528681</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Long Term Debt</td>
+                        <td>211</td>
+                        <td>211</td>
+                        <td>211</td>
+                        <td>211</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">
+                          Provision For Risks And Charges
+                        </td>
+                        <td>3937293938</td>
+                        <td>4272235871</td>
+                        <td>4142786074</td>
+                        <td>3753123093</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Deferred Liabilities</td>
+                        <td>3487707785</td>
+                        <td>3575188210</td>
+                        <td>3480036228</td>
+                        <td>3255748057</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">
+                          Derivative Product Liabilities
+                        </td>
+                        <td>3839508069</td>
+                        <td>4407392671</td>
+                        <td>4057373222</td>
+                        <td>4023672847</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">
+                          Other Non Current Liabilities
+                        </td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="w-100 my-4 large_table">
+                    <tbody class="table-body">
+                      <tr class="text-s sub-header">
+                        <th class="p-2" colspan="5">Shareholders Equity</th>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Common Stock</td>
+                        <td>3470174480</td>
+                        <td>415017783</td>
+                        <td>3733701676</td>
+                        <td>3834109781</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Retained Earnings</td>
+                        <td>4476873024</td>
+                        <td>4344008444</td>
+                        <td>3827180241</td>
+                        <td>3813180874</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Other Shareholders Equity</td>
+                        <td>4028323022</td>
+                        <td>3786212939</td>
+                        <td>4262044922</td>
+                        <td>3802498550</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Total Shareholders Equity</td>
+                        <td>3588587097</td>
+                        <td>3481051057</td>
+                        <td>4149853694</td>
+                        <td>3886232636</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Additional Paid In Capital</td>
+                        <td>4030249738</td>
+                        <td>4328963837</td>
+                        <td>3845288722</td>
+                        <td>4049699240</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Treasury Stock</td>
+                        <td>4837221162</td>
+                        <td>3517232786</td>
+                        <td>3243054933</td>
+                        <td>4720940576</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Minority_Interest</td>
+                        <td>3537830600</td>
+                        <td>4234126871</td>
+                        <td>3419448893</td>
+                        <td>3738759834</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane fade" id="Cash_flow" role="tabpanel" aria-labelledby="nav-cash-flow-tab"
+                  tabindex="0">
+                  <div class="d-flex justify-content-between align-items-center mt-4"
+                    style="border-bottom: 1px solid #edb043">
+                    <h5>APPL CASH FLOW</h5>
+                    <div>
+                      <label>
+                        <input type="radio" name="frequency" checked />
+                        <span></span> Annual
+                      </label>
+                      <label>
+                        <input type="radio" name="frequency" />
+                        <span></span> Quarterly
+                      </label>
+                    </div>
+                  </div>
+                  <table class="w-100 my-4 large_table">
+                    <thead>
+                      <tr>
+                        <th class="float-start">Year</th>
+                        <th>2022</th>
+                        <th>2021</th>
+                        <th>2021</th>
+                        <th>2021</th>
+                      </tr>
+                      <tr class="company">
+                        <td class="float-start">Periods Ending:</td>
+                        <td>26/03</td>
+                        <td>25/12</td>
+                        <td>26/09</td>
+                        <td>25/06</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-s">
+                        <td class="float-start">Operating Cash Flow</td>
+                        <td>69702000000</td>
+                        <td>69702000000</td>
+                        <td>69702000000</td>
+                        <td>69702000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Net Income</td>
+                        <td>54243000000</td>
+                        <td>54243000000</td>
+                        <td>54243000000</td>
+                        <td>54243000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Depreciation</td>
+                        <td>66306000000</td>
+                        <td>66306000000</td>
+                        <td>66306000000</td>
+                        <td>66306000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Deferred Taxes</td>
+                        <td>6306000000</td>
+                        <td>6306000000</td>
+                        <td>6306000000</td>
+                        <td>6306000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Stock Based Compensation</td>
+                        <td>6449000000</td>
+                        <td>6449000000</td>
+                        <td>6449000000</td>
+                        <td>6449000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Other Non Cash Items</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Accounts Receivable</td>
+                        <td>41488000000</td>
+                        <td>41488000000</td>
+                        <td>41488000000</td>
+                        <td>41488000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Accounts Payable</td>
+                        <td>66306000000</td>
+                        <td>63060000000</td>
+                        <td>63060000000</td>
+                        <td>63060000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Other Assets Liabilities</td>
+                        <td>650000000</td>
+                        <td>650000000</td>
+                        <td>650000000</td>
+                        <td>650000000</td>
+                      </tr>
+                      <tr class="text-s bg-light">
+                        <td class="float-start">Investing Cash Flow</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Capital Expenditures</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                        <td>2.11</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Net Intangibles</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                        <td>2.1</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Net Acquisitions</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Purchase of Investments</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                        <td>16391724000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Sale of Investments</td>
+                        <td>44632000000</td>
+                        <td>44632000000</td>
+                        <td>44632000000</td>
+                        <td>44632000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Other Investing Activity</td>
+                        <td>39175101234</td>
+                        <td>39175101234</td>
+                        <td>39175101234</td>
+                        <td>39175101234</td>
+                      </tr>
+                      <tr class="text-s bg-light">
+                        <td class="float-start">Financing Cash Flow</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Long Term Debt Issuance</td>
+                        <td>39850569597</td>
+                        <td>39850569597</td>
+                        <td>39850569597</td>
+                        <td>39850569597</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Long Term Debt Payments</td>
+                        <td>39974229434</td>
+                        <td>39974229434</td>
+                        <td>39974229434</td>
+                        <td>39974229434</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Short Term Debt Issuance</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Common Stock Issuance</td>
+                        <td>43865514591</td>
+                        <td>43865514591</td>
+                        <td>43865514591</td>
+                        <td>43865514591</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Common Stock Repurchase</td>
+                        <td>42878743482</td>
+                        <td>42878743482</td>
+                        <td>42878743482</td>
+                        <td>42878743482</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Common Dividends</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="float-start">Other Financing Charges</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="text-s bg-light">
+                        <td class="float-start">End Cash Position</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                      </tr>
+                      <tr class="text-s bg-light">
+                        <td class="float-start">Income Tax Paid</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                      </tr>
+                      <tr class="text-s bg-light">
+                        <td class="float-start">Interest Paid</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                      </tr>
+                      <tr class="text-s bg-light">
+                        <td class="float-start">Free Cash Flow</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                        <td>34630000000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane fade" id="Dividends" role="tabpanel" aria-labelledby="nav-dividends-tab"
+                  tabindex="0">
+                  <div class="pt-3" style="border-bottom: 2px solid #edb043">
+                    <h5>APPL DIVIDENDS</h5>
+                  </div>
+                  <table class="w-100 my-4 large_table dates">
+                    <thead class="text-start">
+                      <tr>
+                        <th>Dividend Date</th>
+                        <th>Dividend</th>
+                        <th>Yield</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-s">
+                        <td>May 06, 2022</td>
+                        <td>0.23</td>
+                        <td>0.59%</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td>Feb 06, 2022</td>
+                        <td>0.22</td>
+                        <td>0.58%</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td>Nov 06, 2021</td>
+                        <td>0.22</td>
+                        <td>0.60%</td>
+                      </tr>
+                      <tr class="text-s bg-light">
+                        <td>Aug 06, 2021</td>
+                        <td>0.23</td>
+                        <td>0.59%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="text-center pb-3">
+                    <a href="#" style="text-decoration: none">Show More <i class="ri-arrow-down-s-line"></i></a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="Earnings" role="tabpanel" aria-labelledby="nav-earnings-tab"
+                  tabindex="0">
+                  <div class="pt-3" style="border-bottom: 2px solid #edb043">
+                    <h5>APPL EARNINGS</h5>
+                  </div>
+                  <table class="w-100 my-4 large_table">
+                    <thead>
+                      <tr>
+                        <th class="text-start">Release Date</th>
+                        <th>EPS Estimate</th>
+                        <th>EPS Actual</th>
+                        <th>Difference</th>
+                        <th>Surprise Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-s">
+                        <td class="text-start">May 06, 2022</td>
+                        <td>4.27</td>
+                        <td>4.23</td>
+                        <td>0.23</td>
+                        <td>9.91</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="text-start">Feb 06, 2022</td>
+                        <td>7.77</td>
+                        <td>8.28</td>
+                        <td>0.42</td>
+                        <td>22.85</td>
+                      </tr>
+                      <tr class="text-s">
+                        <td class="text-start">Nov 06, 2021</td>
+                        <td>7.22</td>
+                        <td>7.84</td>
+                        <td>0.48</td>
+                        <td>17.58</td>
+                      </tr>
+                      <tr class="text-s bg-light">
+                        <td class="text-start">Aug 06, 2021</td>
+                        <td>6.23</td>
+                        <td>5.58</td>
+                        <td>0.19</td>
+                        <td>8.64</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="text-center pb-3">
+                    <a href="#" style="text-decoration: none">Show More <i class="ri-arrow-down-s-line"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-3 rounded" id="sentiment">
+          <div class="sentiment-title text-center my-3">
+            What is your sentiment on Apple Inc?
+          </div>
+          <div class="sentiment-container d-flex align-items-center justify-content-center my-3">
+            <button type="button" class="text-light p-2 d-flex align-items-center border-0 px-3 me-2 Bull">
+              <img src="images/Bull.png" class="me-2" />Bull
+            </button>
+            <span class="mx-2">or</span>
+            <button type="button" class="text-light p-2 d-flex align-items-center border-0 px-3 ms-2 Bear">
+              <img src="images/Bear.png" class="me-2" />Bear
+            </button>
+          </div>
+        </div>
+        <div class="mt-5 mb-4">
+          <h5 class="pb-3">MARKET ANALYSIS</h5>
+        </div>
+        <div class="row m-0">
+          <div class="col-2 p-0">
+            <img src="images/Rectangle 1.png" alt="" />
+          </div>
+          <div class="col p-0">
+            <p class="mb-0 para3">
+              Sollicitudin eu sit ac mi orci, fermentum sagittis, facilisis
+              dictum fermentum enim, sapien sit dolor ornare ac nisi
+            </p>
+            <p class="company m-0">By Rich Tv | June 30, 2022</p>
+          </div>
+          <hr class="my-2" />
+        </div>
+        <div class="row m-0">
+          <div class="col-2 p-0">
+            <img src="images/Rectangle 2.png" alt="" />
+          </div>
+          <div class="col p-0">
+            <p class="mb-0 para3">
+              Id tristique sit amet, praesent nisl sed aenean sit ipsum morbi
+              congue et fusce elementum viverra mauris, eu
+            </p>
+            <p class="company m-0">By Rich Tv | June 30, 2022</p>
+          </div>
+          <hr class="my-2" />
+        </div>
+        <div class="row m-0">
+          <div class="col-2 p-0">
+            <img src="images/Rectangle 3.png" alt="" />
+          </div>
+          <div class="col p-0">
+            <p class="mb-0 para3">
+              Ullamcorper sit quisque amet id eros ipsum sit egestas
+              adipiscing diam amet odio tincidunt faucibus cum pulvinar nec
+            </p>
+            <p class="company m-0">By Rich Tv | June 30, 2022</p>
+          </div>
+          <hr class="my-2" />
+        </div>
+        <div class="row m-0">
+          <div class="col-2 p-0">
+            <img src="images/Rectangle 4.png" alt="" />
+          </div>
+          <div class="col p-0">
+            <p class="mb-0 para3">
+              Ullamcorper venenatis rhoncus diam vivamus magna vel commodo,
+              dolor dui, lorem urna gravida pretium, lacus gravida non
+              pharetra
+            </p>
+            <p class="company m-0">By Rich Tv | June 30, 2022</p>
+          </div>
+          <hr class="my-2" />
+        </div>
+        <div class="row m-0">
+          <div class="col-2 p-0">
+            <img src="images/Rectangle 5.png" alt="" />
+          </div>
+          <div class="col p-0">
+            <p class="mb-0 para3">
+              Consectetur senectus aliquam rhoncus purus quam venenatis, risus
+              posuere odio adipiscing elit vitae ac est, ante tellus, proin
+            </p>
+            <p class="company m-0">By Rich Tv | June 30, 2022</p>
+          </div>
+          <hr class="my-2" />
+          <div class="row alt-img">
+            <a class="col last-row">See all</a>
+          </div>
+        </div>
+        <div class="container text-center py-5 px-4 newsletter">
+          <h1 class="para lh-base">GET ACCESS TO OUR FREE NEWSLETTER</h1>
+          <div class="underline"></div>
+          <h5 style="color: #777e90">
+            Enter your name and email to receive the free newsletter.
+          </h5>
+          <input placeholder="Name" type="text" class="my-2 p-3 w-100" />
+          <input placeholder="Email" type="email" class="my-2 p-3 w-100" />
+          <button type="submit" class="sub-btn px-3 py-3 m-2">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+    <aside class="col">
+      <div class="col sidebar">
+        <div class="row side_table">
+          <img src="images/Group.png" />
+          <h6>MY WATCHLIST</h6>
+        </div>
+        <hr class="m-0" />
+        <div class="row justify-content-around m-0 heading">
+          <p class="col-4 m-1">Name</p>
+          <p class="col-2 m-1">Price</p>
+          <p class="col-3 m-1">%Chg</p>
+        </div>
+        <hr class="m-0" />
+        <div class="row justify-content-around pt-2 t-line">
+          <div class="col-3">
+            <div class="row">
+              <p class="mb-0 highlight">APPL</p>
+            </div>
+            <div class="row">
+              <p class="mb-1 company">Apple Inc</p>
+            </div>
+          </div>
+          <p class="col-2">681.79</p>
+          <div class="col-3 span pe-0">
+            <span class="col">+1.24</span>
+            <img class="col" src="images/Star 1.png" />
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row pt-4 pb-2 pe-0 ps-3 suggest">
+          <span class="col">Suggested Symbols</span>
+          <i class="ri-search-line col-3"></i>
+        </div>
+        <hr class="m-0" />
+        <div class="row justify-content-around pt-2 t-line">
+          <div class="col-3">
+            <div class="row">
+              <p class="mb-0 highlight">TSLA</p>
+            </div>
+            <div class="row">
+              <p class="mb-1 company">Tesla Inc</p>
+            </div>
+          </div>
+          <p class="col-2">681.79</p>
+          <div class="col-3 span pe-0">
+            <span class="col">+1.74</span>
+            <img class="col" src="images/Star 1 (1).png" />
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row justify-content-around pt-2 t-line">
+          <div class="col-3">
+            <div class="row">
+              <p class="mb-0 highlight">U S500</p>
+            </div>
+            <div class="row">
+              <p class="mb-1 company">S&P 500</p>
+            </div>
+          </div>
+          <p class="col-2">138.93</p>
+          <div class="col-3 span pe-0">
+            <span class="col">+1.26</span>
+            <img class="col" src="images/Star 1 (1).png" />
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row justify-content-around pt-2 t-line">
+          <div class="col-3">
+            <div class="row">
+              <p class="mb-0 highlight">NDX</p>
+            </div>
+            <div class="row">
+              <p class="mb-1 pe-0 company">Nasdaq 100</p>
+            </div>
+          </div>
+          <p class="col-2">3,825.33</p>
+          <div class="col-3 span pe-0">
+            <span class="col">+0.71</span>
+            <img class="col" src="images/Star 1 (1).png" />
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row justify-content-around pt-2 t-line">
+          <div class="col-3">
+            <div class="row">
+              <p class="mb-0 highlight">AMZN</p>
+            </div>
+            <div class="row">
+              <p class="mb-1 company">Amazon</p>
+            </div>
+          </div>
+          <p class="col-2">109.56</p>
+          <div class="col-3 span pe-0">
+            <span class="col">+3.15</span>
+            <img class="col" src="images/Star 1 (1).png" />
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row justify-content-around pt-2 t-line">
+          <div class="col-3">
+            <div class="row">
+              <p class="mb-0 highlight">ZG</p>
+            </div>
+            <div class="row">
+              <p class="mb-1 pe-0 company">God Future</p>
+            </div>
+          </div>
+          <p class="col-2">1,807.50</p>
+          <div class="col-3 span pe-0">
+            <span class="col">+0.12</span>
+            <img class="col" src="images/Star 1 (1).png" />
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row justify-content-around pt-2 t-line">
+          <div class="col-3">
+            <div class="row">
+              <p class="mb-0 highlight">MSFT</p>
+            </div>
+            <div class="row">
+              <p class="mb-1 pe-0 company">Microsoft</p>
+            </div>
+          </div>
+          <p class="col-2">259.58</p>
+          <div class="col-3 span pe-0">
+            <span class="col">+0.71</span>
+            <img class="col" src="images/Star 1 (1).png" />
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row m-2">
+          <button type="submit" class="sub-btn m-0">Save My Watchlist</button>
+        </div>
+      </div>
+      <div class="col sidebar mt-5">
+        <div class="row side_table">
+          <img src="images/Group.png" />
+          <h6>SUBSCIBE TO OUR NEWSLETTER</h6>
+        </div>
+        <hr class="mt-0 mb-3" />
+        <div class="row m-2">
+          <input placeholder="E-mail" type="email" class="email mb-1" />
+        </div>
+        <div class="row m-2">
+          <button type="submit" class="sub-btn">Subscribe</button>
+        </div>
+      </div>
+      <div class="col sidebar mt-5">
+        <div class="row m-0">
+          <div class="d-flex justify-content-between">
+            <a href="" class="py-2 para para3 nav-link">Commodity</a>
+            <a href="" class="py-2 para para3 nav-link" style="color: #edb043; background: #edb04321">Index</a>
+            <a href="" class="py-2 para para3 nav-link">Stock</a>
+            <a href="" class="py-2 para para3 nav-link">Crypto<i class="ri-more-2-line para col p-0"></i></a>
+          </div>
+          <div class="d-flex justify-content-around heading">
+            <p href="" class="p-1 para2 m-0 nav-link">Symbol</p>
+            <p href="" class="p-1 para2 m-0 nav-link">Last</p>
+            <p href="" class="p-1 para2 m-0 nav-link">Chg</p>
+            <p href="" class="p-1 para2 m-0 nav-link">%Chg</p>
+          </div>
+        </div>
+        <table class="sidebar_table">
+          <tbody>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s green">
+                <img src="images/Polygon green.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center green">1.33%</td>
+            </tr>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s green">
+                <img src="images/Polygon green.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center green">1.33%</td>
+            </tr>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s green">
+                <img src="images/Polygon green.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center green">1.33%</td>
+            </tr>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s green">
+                <img src="images/Polygon green.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center green">1.33%</td>
+            </tr>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s green">
+                <img src="images/Polygon green.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center green">1.33%</td>
+            </tr>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s green">
+                <img src="images/Polygon green.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center green">1.33%</td>
+            </tr>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s green">
+                <img src="images/Polygon green.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center green">1.33%</td>
+            </tr>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s green">
+                <img src="images/Polygon green.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center green">1.33%</td>
+            </tr>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s green">
+                <img src="images/Polygon green.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center green">1.33%</td>
+            </tr>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s green">
+                <img src="images/Polygon green.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center green">1.33%</td>
+            </tr>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s red">
+                <img src="images/Polygon red.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center red">-1.33%</td>
+            </tr>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s red">
+                <img src="images/Polygon red.png" /> 400
+              </td>
+              <td class="text-s pe-4 text-center red">-1.33%</td>
+            </tr>
+            <td>
+              <a href="#" class="text-s ms-3">See more</a>
+            </td>
+          </tbody>
+        </table>
+      </div>
+      <div class="col sidebar mt-5">
+        <div class="row side_table">
+          <img src="images/Group.png" />
+          <h6>MARKET MOVERS</h6>
+        </div>
+        <hr class="m-0" />
+        <div class="row m-0 text-center">
+          <button class="col p-2 para para3" style="border: none; background-color: transparent">
+            Top 10 Gainers
+          </button>
+          <button class="col p-2 para para3" style="background-color: #edb04321; color: #edb043; border: none">
+            Top 10 Losers
+          </button>
+        </div>
+        <div class="d-flex justify-content-around heading">
+          <p href="" class="p-1 para2 m-0 nav-link">Symbol</p>
+          <p href="" class="p-1 para2 m-0 nav-link">Last</p>
+          <p href="" class="p-1 para2 m-0 nav-link">Chg</p>
+          <p href="" class="p-1 para2 m-0 nav-link">%Chg</p>
+        </div>
+        <table class="sidebar_table">
+          <tbody>
+            <tr>
+              <td class="para py-2 ps-3 pe-4 text-s table-cell-padding">
+                US30
+              </td>
+              <td class="text-s ps-2">31858</td>
+              <td class="text-s green">
+                <img src="images/Polygon green.png" /> 400
+              </td>
+              <td class="text-s text-start green">1.33%</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr class="m-0" />
+        <div class="row p-2 alt-img">
+          <div class="col para">FPAC</div>
+          <div class="col text-s ms-3 pe-0">5</div>
+          <div class="col text-s ps-0 red">
+            <img src="images/Polygon red.png" />1.45
+          </div>
+          <div class="col text-s red">-35.74%</div>
+        </div>
+        <hr class="m-0" />
+        <div class="row p-2 alt-img">
+          <div class="col para">NRSN</div>
+          <div class="col text-s ms-3 pe-0">2.51</div>
+          <div class="col text-s ps-0 red">
+            <img src="images/Polygon red.png" />0.65
+          </div>
+          <div class="col text-s red">-40.33%</div>
+        </div>
+        <hr class="m-0" />
+        <div class="row p-2 alt-img">
+          <div class="col para">FPAC</div>
+          <div class="col text-s ms-3 pe-0">5</div>
+          <div class="col text-s ps-0 red">
+            <img src="images/Polygon red.png" />1.45
+          </div>
+          <div class="col text-s red">-35.74%</div>
+        </div>
+        <hr class="m-0" />
+        <div class="row p-2 alt-img">
+          <div class="col para">NRSN</div>
+          <div class="col text-s ms-3 pe-0">2.51</div>
+          <div class="col text-s ps-0 red">
+            <img src="images/Polygon red.png" />0.65
+          </div>
+          <div class="col text-s red">-40.33%</div>
+        </div>
+        <hr class="m-0" />
+        <div class="row p-2 alt-img">
+          <div class="col para">FPAC</div>
+          <div class="col text-s ms-3 pe-0">5</div>
+          <div class="col text-s ps-0 red">
+            <img src="images/Polygon red.png" />1.45
+          </div>
+          <div class="col text-s red">-35.74%</div>
+        </div>
+        <hr class="m-0" />
+        <div class="row p-2 alt-img">
+          <div class="col para">NRSN</div>
+          <div class="col text-s ms-3 pe-0">2.51</div>
+          <div class="col text-s ps-0 red">
+            <img src="images/Polygon red.png" />0.65
+          </div>
+          <div class="col text-s red">-40.33%</div>
+        </div>
+        <hr class="m-0" />
+        <div class="row p-2 alt-img">
+          <div class="col para">FPAC</div>
+          <div class="col text-s ms-3 pe-0">5</div>
+          <div class="col text-s ps-0 red">
+            <img src="images/Polygon red.png" />1.45
+          </div>
+          <div class="col text-s red">-35.74%</div>
+        </div>
+        <hr class="m-0" />
+        <div class="row p-2 alt-img">
+          <div class="col para">NRSN</div>
+          <div class="col text-s ms-3 pe-0">2.51</div>
+          <div class="col text-s ps-0 red">
+            <img src="images/Polygon red.png" />0.65
+          </div>
+          <div class="col text-s red">-40.33%</div>
+        </div>
+        <hr class="m-0" />
+        <div class="row p-2 alt-img">
+          <div class="col para">FPAC</div>
+          <div class="col text-s ms-3 pe-0">5</div>
+          <div class="col text-s ps-0 red">
+            <img src="images/Polygon red.png" />1.45
+          </div>
+          <div class="col text-s red">-35.74%</div>
+        </div>
+        <hr class="m-0" />
+        <div class="row p-2 alt-img">
+          <a class="col last-row">More</a>
+        </div>
+      </div>
+      <div class="col sidebar mt-5">
+        <div class="row side_table">
+          <img src="images/Group.png" />
+          <h6 class="mb-0">YOU MAY ALSO LIKE</h6>
+        </div>
+        <hr class="m-0" />
+        <div class="row like">
+          <div class="col-2 ps-0">
+            <img src="images/Small_Rectangles/Rectangle 1.png" />
+          </div>
+          <div class="col p-0">
+            <div class="row m-0">
+              <p class="para para2 m-0 pe-0">
+                Bitcoin crashes below 2017 ATH makes early investors worried
+              </p>
+            </div>
+            <div class="row m-0">
+              <p class="company m-0">By Rich Tv | June 30, 2022</p>
+            </div>
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row like">
+          <div class="col-2 ps-0">
+            <img src="images/Small_Rectangles/Rectangle 2.png" />
+          </div>
+          <div class="col p-0">
+            <div class="row m-0">
+              <p class="para para2 m-0 pe-0">
+                Bitcoin crashes below 2017 ATH makes early investors worried
+              </p>
+            </div>
+            <div class="row m-0">
+              <p class="company m-0">By Rich Tv | June 30, 2022</p>
+            </div>
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row like">
+          <div class="col-2 ps-0">
+            <img src="images/Small_Rectangles/Rectangle 3.png" />
+          </div>
+          <div class="col p-0">
+            <div class="row m-0">
+              <p class="para para2 m-0 pe-0">
+                Bitcoin crashes below 2017 ATH makes early investors worried
+              </p>
+            </div>
+            <div class="row m-0">
+              <p class="company m-0">By Rich Tv | June 30, 2022</p>
+            </div>
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row like">
+          <div class="col-2 ps-0">
+            <img src="images/Small_Rectangles/Rectangle 4.png" />
+          </div>
+          <div class="col p-0">
+            <div class="row m-0">
+              <p class="para para2 m-0 pe-0">
+                Bitcoin crashes below 2017 ATH makes early investors worried
+              </p>
+            </div>
+            <div class="row m-0">
+              <p class="company m-0">By Rich Tv | June 30, 2022</p>
+            </div>
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row like">
+          <div class="col-2 ps-0">
+            <img src="images/Small_Rectangles/Rectangle 5.png" />
+          </div>
+          <div class="col p-0">
+            <div class="row m-0">
+              <p class="para para2 m-0 pe-0">
+                Bitcoin crashes below 2017 ATH makes early investors worried
+              </p>
+            </div>
+            <div class="row m-0">
+              <p class="company m-0">By Rich Tv | June 30, 2022</p>
+            </div>
+          </div>
+        </div>
+        <hr class="m-0" />
+        <div class="row p-2 alt-img">
+          <a class="col last-row">See all</a>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section id="risk-container">
+    <div class="row container Risk">
+      <div class="d-flex column-gap-2">
+        <div>
+          <img src="images/emojione_warning.png" />
+        </div>
+        <h4 class="para">RISK DISCLAIMER</h4>
+      </div>
+      <p>
+        Rich TV's and RICH PICKS DAILY company profiles and other investor
+        relations materials, publications or presentations, including web
+        content, are based on data obtained from sources we believe to be
+        reliable but are not guaranteed as to accuracy and are not purported
+        to be complete.
+      </p>
+      <p class="m-0">
+        As such, the information should not be construed as advice designed to
+        meet the particular investment needs of any investor. Any opinions
+        expressed in Rich TV and RICH PICKS DAILY reports, company profiles,
+        or other investor relations materials and presentations are subject to
+        change. See More
+      </p>
+    </div>
+  </section>
+  <footer class="main-foot">
+    <section class="container">
+      <div class="row pt-5">
+        <div class="col-lg-4 col-md-6 ps-0">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Footer logo" />
+          </div>
+          <div class="footer-para">
+            <p class="my-4 para3">
+              Trading data in widgets displayed with a 15-minute delay. Prices
+              available on stock page updated in real time. Market &amp;
+              fundamental data appearing on Rich Tv sourced from various 3rd
+              party data providers.
+            </p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-6 mt-mobile">
+          <div class="footer-heading">
+            <h5 class="para">Rich Tv</h5>
+          </div>
+          <div class="footer-links">
+            <div class="menu-footer-navigation-one-container">
+              <ul id="menu-footer-navigation-one" class="menu para3">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Pricing and Plans</a></li>
+                <li><a href="#">Affilliate Programs</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Join the Club</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-6 mt-mobile">
+          <div class="footer-heading">
+            <h5 class="para">Learning</h5>
+          </div>
+          <div class="footer-links">
+            <div class="menu-footer-navigation-two-container">
+              <ul id="menu-footer-navigation-two" class="menu para3">
+                <li><a href="#">Rich Picks</a></li>
+                <li><a href="#">Penny Stocks</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">CEO Interviews</a></li>
+                <li><a href="#">Trading School</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-mobile">
+          <div class="footer-contact-us footer-heading">
+            <h5 class="para">Get regular updates from Rich Tv</h5>
+          </div>
+          <div class="mb-3">
+            <div id="contact">
+              <form id="email">
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit" class="border-0">
+                  <i class="ri-arrow-right-line"></i>
+                </button>
+              </form>
+              <div id="mail">
+                <i class="ri-mail-open-line"></i>
+                <p class="mb-0">support@richtv.com</p>
+              </div>
+              <div id="mail">
+                <i class="ri-phone-line"></i>
+                <p class="mb-0">778-237-2402</p>
+              </div>
+              <div id="mail">
+                <a href=""><i class="ri-facebook-fill"></i></a>
+                <a href=""><i class="ri-youtube-fill"></i></a>
+                <a href=""><i class="ri-instagram-fill"></i></a>
+                <a href=""><i class="ri-twitter-fill"></i></a>
+                <a href=""><i class="ri-linkedin-fill"></i></a>
+                <a href=""><i class="ri-snapchat-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="col-12 p-0 para3">
+          <p class="m-0">Copyright © 2024 Rich Tv. All rights reserved</p>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
